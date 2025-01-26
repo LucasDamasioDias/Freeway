@@ -42,8 +42,7 @@ func _on_Player_1_pontua():
 		score1 += 1
 		$ponto.play()
 		$placar1.text = str(score1)
-
-
+                $Player1.volta()
 	if score1 >= 10:
 		$Button.show()
 		$tema.stop()
@@ -58,6 +57,7 @@ func _on_Player_2_pontua2():
 		score2 += 1
 		$ponto.play()
 		$placar2.text = str(score2)
+                $Player2.volta()
 	if score2 >= 10:
 		$Button.show()
 		$tema.stop()
