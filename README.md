@@ -1,2 +1,74 @@
 # Freeway
-Este aqui se trata de um projeto de jogo no estilo "Freeway" ou "Frog" da época do Atari feito em Godot em tutorial do youtube da Cody Academy. Também fiz alterações pessoais para balanceamento do jogo. A primeira parte foi relacionada ao equilíbrio, como os carros surgem da esquerda foi feito uma mudança de código para movimentação lateral de ambos os personagens visto que o player 1 tinha vantagem. Em seguida foi necessário a criação de sprites e animação para a movimentação lateral. Após isto foi verificado que como ambos ficavam andando pela tela poderia haver confusão entre os personagens, logo foi criada uma coloração diferenciada para o player 2. Em seguida foi verificado que o tempo de partida poderia ser muito longo de acordo com a habilidade dos jogadores, logo foi necessária criar uma alteração no código que incluísse um cronômetro. Um novo problema surgiu visto que um jogador que alcançasse certa vantagem na pontuação poderia apenas aguardar o tempo acabar, o que tornaria o game monótono, para isto foi incluso o sistema de "vidas". Isto demandou mais uma mudança no código e criação de mais um asset, deixando o jogo mais estratégico e dinâmico. O repositório não conterá o áudio de backstage pois o arquivo era muito grande para o github, porém tenho o conhecimento da diferença que faz um bom sound design na experiência final.
+
+
+
+Projeto inspirado no clássico jogo **Freeway**, onde o objetivo é atravessar a rua desviando dos carros sem ser atropelado.
+
+## 📋 Descrição
+
+Este projeto foi desenvolvido utilizando a engine **Godot**, aplicando conceitos de UX para aprimorar a experiência do jogador. Foram feitas melhorias e balanceamentos para proporcionar uma jogabilidade mais justa e estratégica.
+
+## 🚀 Tecnologias Utilizadas
+
+As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
+
+- **Godot Engine** - Desenvolvimento do jogo
+- **GDScript** - Lógica e mecânicas
+- **Sprites em 2D** - Elementos gráficos
+
+## 📂 Estrutura do Projeto
+
+```
+Freeway/
+├── assets/
+│   ├── images/
+│   ├── sounds/
+│   └── fonts/
+├── scenes/
+│   ├── main.tscn
+│   ├── player.tscn
+│   └── cars.tscn
+├── scripts/
+│   ├── player.gd
+│   ├── cars.gd
+│   └── game.gd
+├── README.md
+├── LICENSE
+└── project.godot
+```
+
+## ⚙️ Melhorias Implementadas
+
+- **Movimentação lateral:** Agora os jogadores podem se mover para os lados, eliminando a vantagem do jogador 2, que começava do lado direito da tela.
+- **Diferenciação visual:** Foram criadas cores distintas para cada jogador, evitando confusão durante a partida.
+- **Novas animações:** Com a movimentação lateral, foram criadas novas animações para melhor fluidez do jogo.
+- **Sistema de vidas:** Para tornar o jogo mais estratégico, cada jogador tem um contador de vidas, incentivando a tomada de decisões cuidadosas.
+- **Cronômetro de tempo:** Evita que jogadores fiquem parados travando o jogo; ao final do tempo, quem tiver menos pontos perde.
+
+## 🕹️ Como Jogar
+
+1. O **Player 1** movimenta-se pelas teclas **A, W, D, S**.
+2. O **Player 2** movimenta-se pelas **setas do teclado**.
+3. Atravesse a rua sem ser atropelado para ganhar pontos.
+4. Fique atento ao contador de vidas e ao tempo para desenvolver sua estratégia.
+5. O jogador com mais pontos ao final do tempo vence.
+
+## 🛠 Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/LucasDamasioDias/Freeway.git
+   ```
+2. Abra o projeto na Godot Engine.
+3. Execute a cena principal `main.tscn`.
+
+##
+
+## 👥 Desenvolvido Por
+
+- [Lucas Damasio Dias](https://github.com/LucasDamasioDias)
+
+---
+
+Divirta-se jogando **Freeway** e aproveite para explorar o código e aprender mais sobre desenvolvimento de jogos na Godot Engine!
+
